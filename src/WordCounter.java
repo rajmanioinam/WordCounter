@@ -9,7 +9,7 @@ public class WordCounter {
         int wordCount = 0;
         while(scanner.hasNextLine()){
             String line = scanner.nextLine();
-            wordCount += line.split("").length;
+            wordCount += line.split(" ").length;
         }
         System.out.println("The file contains " + wordCount + " word(s).");
     }
